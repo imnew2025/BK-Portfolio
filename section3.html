@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikipedia Clone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+
+        header {
+            background-color: #3366cc;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        nav {
+            background: #efefef;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #3366cc;
+            font-weight: bold;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+        }
+
+        .sidebar {
+            width: 20%;
+            padding-right: 10px;
+            border-right: 1px solid #ddd;
+        }
+
+        .main-content {
+            width: 75%;
+            padding-left: 20px;
+        }
+
+        .search-bar {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .search-bar input {
+            width: 80%;
+            max-width: 600px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .content-section h2 {
+            color: #3366cc;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background: #efefef;
+            border-top: 1px solid #ddd;
+            margin-top: 20px;
+        }
+
+        .footer a {
+            color: #3366cc;
+            text-decoration: none;
+        }
+
+        .table-of-contents {
+            margin-top: 20px;
+            padding: 10px;
+            background: #f2f2f2;
+            border: 1px solid #ddd;
+        }
+
+        .table-of-contents h3 {
+            margin: 0;
+        }
+
+        .table-of-contents ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .table-of-contents ul li {
+            margin: 5px 0;
+        }
+
+        .table-of-contents ul li a {
+            text-decoration: none;
+            color: #3366cc;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                border-right: none;
+                padding: 0;
+            }
+
+            .main-content {
+                width: 100%;
+                padding: 0;
+            }
+
+            .search-bar input {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Wikipedia</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Random Article</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="sidebar">
+            <div class="table-of-contents">
+                <h3>Table of Contents</h3>
+                <ul>
+                    <li><a href="#introduction">Introduction</a></li>
+                    <li><a href="#history">History</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#conclusion">Conclusion</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="search-bar">
+                <input type="text" placeholder="Search Wikipedia...">
+            </div>
+
+            <div class="content-section">
+                <h2 id="introduction">Introduction</h2>
+                <p>Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation.</p>
+
+                <h2 id="history">History</h2>
+                <p>Wikipedia was launched on January 15, 2001, by Jimmy Wales and Larry Sanger. It has grown to become one of the largest and most popular general reference works on the Internet.</p>
+
+                <h2 id="features">Features</h2>
+                <ul>
+                    <li>Over 6 million articles in the English language.</li>
+                    <li>Available in multiple languages.</li>
+                    <li>Open collaboration and editing.</li>
+                </ul>
+
+                <h2 id="conclusion">Conclusion</h2>
+                <p>Wikipedia continues to evolve and serve as a vital resource for knowledge sharing across the globe.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2025 Wikipedia Clone. This is a demo page. <a href="#">Learn more</a>.</p>
+    </div>
+
+    <script>
+        // JavaScript for Search Functionality
+        document.querySelector('input').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                alert('Search functionality is not implemented in this demo.');
+            }
+        });
+    </script>
+</body>
+</html>

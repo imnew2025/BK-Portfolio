@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #0077cc;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #005fa3;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            padding: 0.5rem 1rem;
+            align-items: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .course {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+            padding: 1rem 0;
+        }
+        .course img {
+            max-width: 150px;
+            border-radius: 8px;
+        }
+        .course-details {
+            flex: 1;
+            margin-left: 1rem;
+        }
+        .course-title {
+            font-size: 1.5rem;
+            color: #333;
+        }
+        .course-desc {
+            margin-top: 0.5rem;
+            color: #666;
+        }
+        .enroll-btn {
+            background-color: #0077cc;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        .enroll-btn:hover {
+            background-color: #005fa3;
+        }
+        footer {
+            text-align: center;
+            margin-top: 2rem;
+            padding: 1rem;
+            background-color: #f4f4f4;
+            color: #666;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Online Courses</h1>
+</header>
+
+<nav>
+    <div><strong>Courses</strong></div>
+    <div>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="course">
+        <img src="https://via.placeholder.com/150" alt="Course Image">
+        <div class="course-details">
+            <div class="course-title">Full Stack Development</div>
+            <div class="course-desc">Learn to build modern web applications from scratch.</div>
+        </div>
+        <button class="enroll-btn" onclick="enroll('Full Stack Development')">Enroll Now</button>
+    </div>
+
+    <div class="course">
+        <img src="https://via.placeholder.com/150" alt="Course Image">
+        <div class="course-details">
+            <div class="course-title">Data Science Mastery</div>
+            <div class="course-desc">Master data analysis, visualization, and machine learning.</div>
+        </div>
+        <button class="enroll-btn" onclick="enroll('Data Science Mastery')">Enroll Now</button>
+    </div>
+
+    <div class="course">
+        <img src="https://via.placeholder.com/150" alt="Course Image">
+        <div class="course-details">
+            <div class="course-title">Digital Marketing Essentials</div>
+            <div class="course-desc">Become a digital marketing expert with hands-on projects.</div>
+        </div>
+        <button class="enroll-btn" onclick="enroll('Digital Marketing Essentials')">Enroll Now</button>
+    </div>
+</div>
+
+<footer>
+    &copy; 2025 Online Courses Platform. All Rights Reserved.
+</footer>
+
+<script>
+    function enroll(courseName) {
+        alert(`You have successfully enrolled in ${courseName}!`);
+    }
+</script>
+
+</body>
+</html>
